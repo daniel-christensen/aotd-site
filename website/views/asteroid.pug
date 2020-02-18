@@ -1,0 +1,7 @@
+each object in data
+    div(class='col-sm-12 col-md-12 col-lg-6 col-xl-6')
+        a(href=object.link, style="text-decoration:none")
+            div(class="ast-item mx-auto text-white")
+                img(src="img/asteroid.png" class="float-left" width="100")
+                p(class="text-left ast-item-text") 
+                    <b>ID: #{object.id}</b></br>Est. Diameter: #{object.estD}<br>Miss Distance: #{object.missD}<br>Potentially Dangerous: #{object.pD}</p>

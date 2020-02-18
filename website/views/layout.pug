@@ -1,0 +1,54 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        title= 'Asteroids of the Day'
+        link(rel='stylesheet', href='/css/bootstrap.min.css')
+        link(rel='stylesheet', href='/css/styles.css')
+        link(rel='stylesheet', href='/fontawesome-free-5.12.1-web/css/all.css')
+
+    body(id="body")
+        // Header
+        header(class='masthead text-white text-center')
+            div(class='container d-flex align-items-center flex-column')
+                img(class='masthead-avatar mb-5', src='img/earth.png')
+                h1(class='masthead-heading text-uppercase mb-0') Asteroids of the Day   
+        
+        // Middle content section
+        section(class='page-section')
+            div(class='container')
+
+                // Row for all content
+                div(class='row', id='content')
+                    // TODO
+                    include asteroid
+
+
+        // Footer
+        footer(class='footer text-center')
+            div(class='container')
+                
+                // Row for all footer content
+                div(class='row')
+
+                    // Content
+                    // Powered by message
+                    div(class='col-lg-4 mb-5 mb-lg-0')
+                        h4(class='text-uppercase mb-4') Powered by Asteroids - NeoWs
+                        h4
+                            a(href="https://api.nasa.gov/") NASA API
+
+                    // Contact details
+                    div(class='col-lg-4 mb-5 mb-lg-0')
+                        h4(class='text-uppercase mb-4') Contact Me
+                        a(href='https://www.linkedin.com/in/daniel-christensen-21652b1a0/', class='btn btn-outline-light btn-social mx-1')
+                            i(class='fab fa-fw fa-linkedin-in')
+                        a(href='https://github.com/dchri18', class='btn btn-outline-light btn-social mx-1')
+                            i(class='fab fa-fw fa-github')
+
+                    // Signature
+                    div(class='col-lg-4')
+                        h4(class='text-uppercase mb-4') Created by Daniel Christensen
+                        p(class='center-text') This was created as an introduction to Node.js web development.
+        
+        script(src='js/bootstrap.min.js')
